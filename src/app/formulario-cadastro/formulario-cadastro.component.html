@@ -1,0 +1,33 @@
+<div>
+    <mat-card >
+        <mat-card-content>
+            <mat-grid-list rowHeight="100px" cols="12" >
+                <mat-grid-tile  [colspan]="12" [rowspan]="1">
+                    <img mat-card-image 
+                    src="../../assets/img/logocia.jpg"  
+                     height="95%"
+                    >
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="12" [rowspan]="2">
+                    <mat-form-field style="width: 80%;">
+                        <mat-label>Nome</mat-label>
+                        <input matInput placeholder="Nome" [(ngModel)]="nome" name="nome" required>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="12" [rowspan]="2">
+                    <mat-form-field style="width: 80%;">
+                        <mat-label>Telefone</mat-label>
+                        <input matInput placeholder="Telefone" [(ngModel)]="telefone" name="telefone" required>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="12" [rowspan]="2">
+                    <mat-label>Já aceitou Jesus como seu salvador?</mat-label>
+                    <mat-slide-toggle [(ngModel)]="aceitouJesus" name="aceitouJesus"></mat-slide-toggle>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="12" [rowspan]="2">
+                    <button mat-raised-button color="primary" type="submit">Salvar</button>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-card-content>
+    </mat-card>
+</div>

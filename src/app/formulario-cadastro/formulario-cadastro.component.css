@@ -1,0 +1,28 @@
+.example-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Ajuste o tamanho do componente mat-slide-toggle */
+.mat-slide-toggle {
+  height: 40px;
+  /* Ajuste a altura conforme necessário */
+}
+
+/* Ajuste o tamanho do controle do slide dentro do mat-slide-toggle */
+.mat-slide-toggle-bar {
+  height: 30px;
+  /* Ajuste a altura conforme necessário */
+}
+
+/* Ajuste o tamanho do botão de controle dentro do mat-slide-toggle */
+.mat-slide-toggle-thumb {
+  width: 30px;
+  /* Ajuste a largura conforme necessário */
+  height: 30px;
+  /* Ajuste a altura conforme necessário */
+}
