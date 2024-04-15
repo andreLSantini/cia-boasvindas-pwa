@@ -8,24 +8,37 @@
                      height="95%"
                     >
                 </mat-grid-tile>
-                <mat-grid-tile [colspan]="12" [rowspan]="2">
-                    <mat-form-field style="width: 80%;">
-                        <mat-label>Nome</mat-label>
+                <mat-grid-tile  [colspan]="12" [rowspan]="1">
+                    <mat-label  style="font-size: x-large;">Olá! Seja muito bem-vindo(a) à Igreja CIA. Queremos conhecer você. Preencha este formulário, e apresente a tela final à equipe de Boas-Vindas para retirar um brinde no final do culto!
+                    </mat-label>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="12" [rowspan]="1">
+                    <mat-form-field style="width: 95%;">
+                        <mat-label>QUAL O SEU NOME COMPLETO?
+                        </mat-label>
                         <input matInput placeholder="Nome" [(ngModel)]="nome" name="nome" required>
                     </mat-form-field>
                 </mat-grid-tile>
-                <mat-grid-tile [colspan]="12" [rowspan]="2">
-                    <mat-form-field style="width: 80%;">
-                        <mat-label>Telefone</mat-label>
+                <mat-grid-tile [colspan]="12" [rowspan]="1">
+                    <mat-form-field style="width: 95%;">
+                        <mat-label>Telefone / WHATSAPP (COM DDD)
+                        </mat-label>
                         <input matInput placeholder="Telefone" [(ngModel)]="telefone" name="telefone" required>
                     </mat-form-field>
                 </mat-grid-tile>
-                <mat-grid-tile [colspan]="12" [rowspan]="2">
-                    <mat-label>Já aceitou Jesus como seu salvador?</mat-label>
+                <mat-grid-tile [colspan]="12" [rowspan]="1">
+                    <mat-form-field style="width: 95%;">
+                        <mat-label>Textarea</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field>
+                </mat-grid-tile>
+                
+                <mat-grid-tile [colspan]="12" [rowspan]="1">
+                    <mat-label style="font-size: x-large;">Já aceitou Jesus como seu salvador?</mat-label>
                     <mat-slide-toggle [(ngModel)]="aceitouJesus" name="aceitouJesus"></mat-slide-toggle>
                 </mat-grid-tile>
-                <mat-grid-tile [colspan]="12" [rowspan]="2">
-                    <button mat-raised-button color="primary" type="submit">Salvar</button>
+                <mat-grid-tile [colspan]="12" [rowspan]="2" >
+                    <button mat-raised-button color="primary" type="submit" style="width: 95%;">Salvar</button>
                 </mat-grid-tile>
             </mat-grid-list>
         </mat-card-content>
